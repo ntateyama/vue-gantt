@@ -1,9 +1,8 @@
-module.exports = {
-  publicPath: "/devextreme-vue-template",
+const isProd = process.env.NODE_ENV === 'production';
 
-  pluginOptions: {
-    vuetify: {
-			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
-		}
-  }
+module.exports = {
+  publicPath: isProd ? 'https://github.com/ntateyama/vue-gantt.git' : '/',
+  outputDir: 'docs',
+  filenameHashing: false,
+  productionSourceMap: false,
 };
