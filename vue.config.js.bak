@@ -5,9 +5,4 @@ module.exports = {
   outputDir: 'docs',
   filenameHashing: false,
   productionSourceMap: false,
-  pluginOptions: {
-    vuetify: {
-			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
-		}
-  }
 };
